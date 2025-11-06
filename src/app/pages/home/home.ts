@@ -4,6 +4,7 @@ import { Product } from '../../constant/types';
 import { CardForProduct } from '../../components/card-for-product/card-for-product';
 import { Page } from '../../components/layout/page/page';
 import { Header } from '../../components/header/header';
+
 @Component({
   selector: 'app-home',
   imports: [CardForProduct, Page, Header],

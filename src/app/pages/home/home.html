@@ -1,6 +1,6 @@
 <app-header> home page </app-header>
 @if(loading()){
-<div>loading...</div>
+<div class="loading-page">loading...</div>
 }
 <app-page>
   @for( product of data() ;track product.id){
@@ -8,5 +8,5 @@
   }
 </app-page>
 @if(data().length==0 && !loading()){
-<div>no products</div>
+<div>loading...</div>
 }

@@ -33,3 +33,10 @@
   font-size: 40px;
   margin-block: 20px;
 }
+.loading-page {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
