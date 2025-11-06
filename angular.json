@@ -23,7 +23,7 @@
               }
             ],
             "styles": ["src/custom-theme.scss", "src/styles.css"],
-            "outputPath": "./dist/ecommerce-angular-b"
+            "outputPath": "../dist/ecommerce-angular-b"
           },
           "configurations": {
             "production": {
