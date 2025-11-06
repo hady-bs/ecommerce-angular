@@ -12,4 +12,7 @@ import { MatButtonModule } from '@angular/material/button';
 export class CardForProduct {
   @Input() product!: Product;
   storageController = inject(LocalStorageService);
+  refreshPage() {
+    if (window.location.pathname != '/') window.location.reload();
+  }
 }
