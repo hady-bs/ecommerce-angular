@@ -1,0 +1,54 @@
+.card {
+  border: 1px solid black;
+  border-radius: 25px;
+  padding: 25px;
+  position: relative;
+}
+.card .card-header {
+  margin-block: 10px;
+  text-align: center;
+}
+.card .card-header-title {
+  font-size: 25px;
+  line-height: 1.2;
+  display: -webkit-box; /* necessary for line-clamp */
+  -webkit-line-clamp: 1; /* number of lines to clamp */
+  -webkit-box-orient: vertical; /* orientation must be vertical */
+  overflow: hidden; /* hide overflow */
+  text-overflow: ellipsis;
+}
+
+.card .card-header-subtitle {
+  font-size: 18px;
+  background-color: rgb(255, 140, 140);
+  width: fit-content;
+  padding: 10px 20px;
+  margin: 10px auto;
+}
+.card .card-footer {
+  height: 100px;
+  display: -webkit-box; /* necessary for line-clamp */
+  -webkit-line-clamp: 3; /* number of lines to clamp */
+  -webkit-box-orient: vertical; /* orientation must be vertical */
+  overflow: hidden; /* hide overflow */
+  text-overflow: ellipsis;
+}
+.card img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+}
+.card-remove-favorite {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.card-remove-cart {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.container-footer {
+  display: flex;
+  justify-content: space-between;
+}

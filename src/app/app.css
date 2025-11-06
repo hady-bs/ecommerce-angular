@@ -1,0 +1,8 @@
+header nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+header {
+  margin-block: 20px;
+}

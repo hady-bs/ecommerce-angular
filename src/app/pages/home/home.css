@@ -1,0 +1,35 @@
+.desc {
+  line-clamp: 1;
+  -webkit-line-clamp: 1;
+}
+.container {
+  width: 90%;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+@media (max-width: 900px) {
+  .container {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .container {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.header {
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 50px;
+  text-align: center;
+  font-size: 40px;
+  margin-block: 20px;
+}

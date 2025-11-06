@@ -1,0 +1,10 @@
+<app-header> Favorite Page </app-header>
+<app-page>
+  @for( product of data(); track product.id){
+  <app-card-for-product [product]="product" />
+  }
+</app-page>
+
+@if(data().length==0){
+<div>no product in favorite</div>
+}

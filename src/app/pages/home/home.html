@@ -1,0 +1,12 @@
+<app-header> home page </app-header>
+@if(loading()){
+<div>loading...</div>
+}
+<app-page>
+  @for( product of data() ;track product.id){
+  <app-card-for-product [product]="product" />
+  }
+</app-page>
+@if(data().length==0 && !loading()){
+<div>no products</div>
+}

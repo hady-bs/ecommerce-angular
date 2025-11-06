@@ -1,0 +1,40 @@
+<div class="card">
+  <div class="card-header">
+    <div class="card-header-title">
+      {{ product.title }}
+    </div>
+    <div class="card-header-subtitle">
+      {{ product.category }}
+    </div>
+  </div>
+  <img src="{{ product.image }}" />
+  <div class="card-footer">{{ product.description }}</div>
+  <div class="card-remove-cart" (click)="storageController.removeForCart(product)">
+    <mat-icon>shopping_cart</mat-icon>
+    <mat-icon>delete</mat-icon>
+  </div>
+  <div class="card-remove-favorite" (click)="storageController.removeForFavorite(product)">
+    <mat-icon>favorite</mat-icon>
+    <mat-icon>delete</mat-icon>
+  </div>
+  <div class="container-footer">
+    <button
+      matFab
+      extended
+      style="background-color: lightcoral; border-radius: 25px"
+      (click)="storageController.addForCart(product)"
+    >
+      <mat-icon>shopping_cart</mat-icon>
+      add to cart
+    </button>
+    <button
+      matFab
+      extended
+      style="background-color: lightcoral; border-radius: 25px"
+      (click)="storageController.addForFavorite(product)"
+    >
+      <mat-icon>favorite</mat-icon>
+      add to favorite
+    </button>
+  </div>
+</div>
